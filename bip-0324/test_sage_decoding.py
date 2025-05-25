@@ -14,7 +14,7 @@ Instructions:
 
 * Copy over this file and the CSV test vectors:
 
-  cp PATH_TO_BIPS_REPO/bip-0324/{*.csv,test_sage_decoding.py} .
+  cp PATH_TO_BIPS_REPO/bips/bip-0324/{*.csv,test_sage_decoding.py} .
 
 * Run the tests:
 
