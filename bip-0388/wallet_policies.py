@@ -191,7 +191,7 @@ if __name__ == "__main__":
     ]
 
     for desc in descriptors:
-        # Demoes the conversion from a "sane" descriptor to a wallet policy
+        # Demonstrates the conversion from a "sane" descriptor to a wallet policy
         print(f"Descriptor:\n{desc}")
         wp = WalletPolicy.from_descriptor(desc)
         print(f"Policy descriptor template:\n{wp.descriptor_template}")
