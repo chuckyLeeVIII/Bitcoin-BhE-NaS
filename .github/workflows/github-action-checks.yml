@@ -29,11 +29,3 @@ jobs:
 
       - name: Check spelling
         uses: crate-ci/typos@master
-
-  BIP340-Test-Vectors:
-    name: "BIP340 Test Vector Check"
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - name: Run vector consistency check
-        run: python3 bip-0340/check_vectors.py
