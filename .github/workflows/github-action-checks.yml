@@ -29,3 +29,9 @@ jobs:
 
       - name: Check spelling
         uses: crate-ci/typos@master
+
+  BIP-0340-Check-Vectors:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 bip-0340/check_vectors.py
