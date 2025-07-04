@@ -5,7 +5,6 @@ BIPs can be used.
 
 ## Smart Contract Example
 
-`smart_contract_example.py` shows how to assemble and run a simple Bitcoin
 Script for a Pay-to-Public-Key-Hash (P2PKH) contract using
 `python-bitcoinlib`.
 
