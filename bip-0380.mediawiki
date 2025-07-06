@@ -88,7 +88,7 @@ When the final step is <tt>/*</tt> or <tt>/*'</tt>, an output script will be pro
 The derived key must be not be serialized as an uncompressed public key.
 Script Expressions may have further requirements on how derived public keys are serialized for script creation.
 
-In the above specification, the hardened indicator <tt>h</tt> may be replaced with alternative hardened indicators of <tt>H</tt> or <tt>'</tt>.
+In the above specification, the hardened indicator <tt>h</tt> may be replaced with alternative hardened indicator of <tt>'</tt>.
 
 ====Normalization of Key Expressions with Hardened Derivation====
 
@@ -245,8 +245,9 @@ Invalid expression:
 * Too short fingerprint: <tt>[deadbef/0h/0h/0h]0260b2003c386519fc9eadf2b5cf124dd8eea4c4e68d5e154050a9346ea98ce600</tt>
 * Too long fingerprint: <tt>[deadbeeef/0h/0h/0h]0260b2003c386519fc9eadf2b5cf124dd8eea4c4e68d5e154050a9346ea98ce600</tt>
 * Invalid hardened indicators: <tt>[deadbeef/0f/0f/0f]0260b2003c386519fc9eadf2b5cf124dd8eea4c4e68d5e154050a9346ea98ce600</tt>
-* Invalid hardened indicators: <tt>[deadbeef/0H/0H/0H]0260b2003c386519fc9eadf2b5cf124dd8eea4c4e68d5e154050a9346ea98ce600</tt>
 * Invalid hardened indicators: <tt>[deadbeef/-0/-0/-0]0260b2003c386519fc9eadf2b5cf124dd8eea4c4e68d5e154050a9346ea98ce600</tt>
+* Invalid hardened indicators: <tt>[deadbeef/0H/0H/0H]0260b2003c386519fc9eadf2b5cf124dd8eea4c4e68d5e154050a9346ea98ce600</tt>
+* Invalid hardened indicators: <tt>[deadbeef/0h/1h/2]xprvA1RpRA33e1JQ7ifknakTFpgNXPmW2YvmhqLQYMmrj4xJXXWYpDPS3xz7iAxn8L39njGVyuoseXzU6rcxFLJ8HFsTjSyQbLYnMpCqE2VbFWc/3H/4h/5h/*H</tt>
 * Private key with derivation: <tt>L4rK1yDtCWekvXuE6oXD9jCYfFNV2cWRpVuPLBcCU2z8TrisoyY1/0</tt>
 * Private key with derivation children: <tt>L4rK1yDtCWekvXuE6oXD9jCYfFNV2cWRpVuPLBcCU2z8TrisoyY1/*</tt>
 * Derivation index out of range: <tt>xprv9s21ZrQH143K31xYSDQpPDxsXRTUcvj2iNHm5NUtrGiGG5e2DtALGdso3pGz6ssrdK4PFmM8NSpSBHNqPqm55Qn3LqFtT2emdEXVYsCzC2U/2147483648</tt>
