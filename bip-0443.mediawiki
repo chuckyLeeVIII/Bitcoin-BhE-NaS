@@ -176,7 +176,7 @@ If the <code><data></code> is non-empty, then the additive tweak for the data is
 
 In the following, the ''current input'' is the input whose script is being executed.
 
-The following value of the <code><mode></code> are defined:
+The following values of the <code><mode></code> are defined:
 * <code>CCV_MODE_CHECK_INPUT = -1</code>: Check an input's script; no amount check.
 * <code>CCV_MODE_CHECK_OUTPUT = 0</code>: Check an output's script; preserve the (possibly residual) amount.
 * <code>CCV_MODE_CHECK_OUTPUT_IGNORE_AMOUNT = 1</code>: Check an output's script; ignore amounts.
@@ -238,7 +238,7 @@ The following notations are used in the pseudocode below:
 ==== Transaction-wide initialization ====
 
 This is executed once for the entire transaction, before any of the transaction input's scripts are evaluated.
-Itinitializes three arrays that are used to keep track of the amount information of the output.
+It initializes three arrays that are used to keep track of the amount information of the output.
 
 <source lang="python">
   output_min_amount = [0] * n_outputs
@@ -252,7 +252,7 @@ This is executed at the beginning of the evaluation of each input's script. It i
 the full amount of the current input.
 
 <source lang="python">
-  residual_input_amount = input[this_input_index].amount
+  residual_input_amount = inputs[this_input_index].amount
 </source>
 
 ==== <code>OP_CHECKCONTRACTVERIFY</code> evaluation ====
